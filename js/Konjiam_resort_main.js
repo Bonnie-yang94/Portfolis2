@@ -1,6 +1,6 @@
 $.getJSON('https://api.openweathermap.org/data/2.5/weather?id=1841810&appid=a3bff4341071c1d92c61a31940fa628d&units=metric', function (result) {
     $('.ctemp').append(result.main.temp + '˚' + 'C');
-    var wiconUrl = '<img src="../img/wheater/' + result.weather[0].icon + '.svg" width="65px" height="55px" alt="' + result.weather[0].description + '">'
+    var wiconUrl = '<img src="img/wheater/' + result.weather[0].icon + '.svg" width="65px" height="55px" alt="' + result.weather[0].description + '">'
     $('.w_icon').html(wiconUrl);
 });
 
