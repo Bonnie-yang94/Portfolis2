@@ -879,12 +879,38 @@ div.p_scroll::-webkit-scrollbar-thumb {
     align-items: center;
     margin:0px 40px 75px 0;
 }
+.hover_event{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(244, 132, 115, 0.7);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition: all ease-in 0.3s;
+    border-right: 7px solid #fff;
+    cursor: pointer;
+}
+.hover_event h1{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.pro_p:hover .hover_event{
+    opacity: 1;
+    left: 0;
+    transition: all ease-out 0.3s;
+}
 .pro_p{
     background: url(../img/metrial/main_sec_2_promotion/promotion/1_Kon_perfume.png) no-repeat;
     background-size: contain;
     width: 352px;
     height: 229px;
     margin-bottom: 20px;
+    position: relative;
 }
 .pro_p.p2{
     background: url(../img/metrial/main_sec_2_promotion/promotion/2_home_gardening.png) no-repeat;

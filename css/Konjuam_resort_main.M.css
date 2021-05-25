@@ -417,20 +417,6 @@ section.sec2{
     color: #fff;
     font-size: 1.2rem;
 }
-.p_scroll {
-    height: 347px;
-}
-.pro_wrap {
-    margin-top: 45px;
-    width: 100%;
-}
-.pro_c {
-    width: 266px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
 .pro_p{
     width: 264px;
     height: 164px;
