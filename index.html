@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>Let's green Play healing 곤지암 리조트</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" type="text/css" href="css/Konjiam_resort_main.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="css/Konjuam_resort_main.M.css" />
+</head>
+
+<body id="top">
+    <header>
+        <div class="headercon">
+            <div class="weather">
+                <div class="w_icon"></div>
+                <span class="ctemp"></span>
+                <span id="now_day"></span>
+                <span id="now_time"></span>
+                <span>지금 곤지암의 날씨는?</span>
+            </div>
+            <div class="menu_M"></div>
+            <div class="nav">
+                <a href="#" class="top_logo"></a>
+                <ul class="menu">
+                    <li>리조트 안내</li>
+                    <li>예약</li>
+                    <li>프로모션</li>
+                    <li>리조트 뉴스</li>
+                    <li>멤버쉽 안내</li>
+                </ul>
+                <div class="mini_nav">
+                    <div class="mini_logo"></div>
+                    <ul class="m_nav">
+                        <li>로그인</li>
+                        <li>회원가입</li>
+                        <li>멤버쉽</li>
+                        <li>예약조회</li>
+                    </ul>
+                    <select>
+                        <option>한국어</option>
+                        <option>English</option>
+                        <option>中國語</option>
+                        <option>日本語</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nav_all">
+                <ul class="sub_menu list1" id="menu1">
+                    <li><a href="html/Konjiam_resort_intro.html">브랜드소개</a></li>
+                    <li><a href="#">B/I 소개</a></li>
+                    <li><a href="#">가이드 맵</a></li>
+                    <li><a href="#">생체 하천</a></li>
+                </ul>
+                <ul class="sub_menu list2" id="menu2">
+                    <li><a href="html/Konjiam_resort_room.html">객실 안내</a></li>
+                    <li><a href="#">객실 예약</a></li>
+                    <li><a href="#">예약조회/변경</a></li>
+                </ul>
+                <ul class="sub_menu list3" id="menu3">
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">패키지</a></li>
+                    <li><a href="#">프로모션</a></li>
+                    <li><a href="#">로고샵</a></li>
+                </ul>
+                <ul class="sub_menu list4" id="menu4">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">채용공고</a></li>
+                    <li><a href="#">보도자료</a></li>
+                </ul>
+                <ul class="sub_menu list5" id="menu5">
+                    <li><a href="#">가입안내</a></li>
+                    <li><a href="#">콘도회원 라운지</a></li>
+                    <li><a href="#">마이서비스</a></li>
+                </ul>
+            </div>
+            <div class="c_text">
+                <div class="t1">
+                    <h1>힐링에 재미를</h1>
+                    <h1>더하다</h1>
+                </div>
+                <h2>'Let's play healing'</h2>
+                <span>도심에서 가장 가까운 생활 속 고품격 프라이빗 곤지암리조트</span>
+            </div>
+            <div class="swiper-container autobg">
+                <div class="swiper-wrapper list">
+                    <div class="swiper-slide bg1"></div>
+                    <div class="swiper-slide bg2"></div>
+                    <div class="swiper-slide bg3"></div>
+                    <div class="swiper-slide bg4"></div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+    </header>
+    <div class="reservation">
+        <div class="r_sec1">
+            <select>
+                <option>프라임 P</option>
+                <option>디럭스 D</option>
+                <option>노블 A</option>
+                <option>노블 B</option>
+                <option>노블 C</option>
+                <option>로얄 R</option>
+                <option>스위트 S</option>
+                <option>테마룸</option>
+            </select>
+        </div>
+        <div class="r_sec2">
+            <div class="start_day">
+                <span>체크인</span>
+                <label id="today"></label>
+                <input type="text" class="st">
+                <div class="calender"></div>
+            </div>
+            <div class="next_day">
+                <span>체크아웃</span>
+                <label id="nextday"></label>
+                <input type="text" class="fn">
+                <div class="calender"></div>
+            </div>
+            <div class="cal_day">
+                <label id="calday"></label>
+                <input type="text" id="cal" readonly>
+            </div>
+        </div>
+        <div class="r_sec2_M">
+            <div class="start_day_M">
+                <span>체크인</span>
+                <input type="date" id="M_st">
+            </div>
+            <div class="next_day_M">
+                <span>체크아웃</span>
+                <input type="date" id="M_nt">
+            </div>
+            <div class="cal_day_M">
+                <input type="text" id="cal_M" readonly>
+            </div>
+        </div>
+        <button class="r_Submit" type="submit">예약하기</button>
+    </div>
+    <section class="sec1">
+        <h1 class="title">Event</h1>
+        <div class="swiper-container sec1_s">
+            <div class="swiper-wrapper list">
+                <div class="swiper-slide se1_1"></div>
+                <div class="swiper-slide se1_2"></div>
+                <div class="swiper-slide se1_3"></div>
+                <div class="swiper-slide se1_4"></div>
+                <div class="swiper-slide se1_5"></div>
+            </div>
+            <div class="swiper-button-next sec1_bn"></div>
+            <div class="swiper-button-prev sec1_pv"></div>
+            <div class="swiper-pagination sec1_pg"></div>
+        </div>
+    </section>
+    <div class="f_bg_1"></div>
+    <section class="sec2">
+        <h1 class="title">Promotion</h1>
+        <ul class="tab_conlist">
+            <li data-id="fade1" class="on">패키지</li>
+            <li data-id="fade2">프로모션</li>
+            <li data-id="fade3">로고샵</li>
+        </ul>
+        <div class="tab_contents pakage" id="fade1">
+            <div class="pack_wrap">
+                <div class="pack_1 pk">
+                    <div class="pk_btn">
+                        <span>키즈 그림일기</span>
+                    </div>
+                    <div class="bk_bg">
+                        <h2>키즈 그림일기 패키지</h2>
+                        <span class="phrase">곤지암 리조트의 사계절 풍경을<br>
+                            다양한 재료를 이용해 그림일기로 남겨보세요.</span>
+                        <span>패키지 가격</span>
+                        <div class="s_con">
+                            <span class="big pink">170,000원</span>
+                            <span class="big">~(VAT포함)</span>
+                        </div>
+                        <span>상품구성</span>
+                        <div class="s_con">
+                            <span class="big">객실 1박 + 곤지암 그림일기 키트 1set</span>
+                        </div>
+                        <span>이용기간</span>
+                        <div class="s_con">
+                            <span class="big">2021.03.01~05.31</span>
+                        </div>
+                        <a href="#" class="more_btn">More view</a>
+                    </div>
+                </div>
+                <div class="pack_2 pk">
+                    <div class="pk_btn">
+                        <span>화담숲 패키지</span>
+                    </div>
+                    <div class="bk_bg">
+                        <h2>화담숲 패키지</h2>
+                        <span class="phrase">곤지암 화담숲만의 특별한 피톤치드를 만나보세요.</span>
+                        <span>패키지 가격</span>
+                        <div class="s_con">
+                            <span class="big pink">160,000원</span>
+                            <span class="big">~(VAT포함)</span>
+                        </div>
+                        <span>상품구성</span>
+                        <div class="s_con">
+                            <span class="big">객실 1박 + 화담숲 입장권(2매)
+                            </span>
+                            <span class="phrase">*2매 한정<br>
+                                사전 예약없이 화담숲 매표소에서 예약번호 제시
+                            </span>
+                        </div>
+                        <span>이용기간</span>
+                        <div class="s_con">
+                            <span class="big">2021.03.01~05.31</span>
+                        </div>
+                        <a href="#" class="more_btn">More view</a>
+                    </div>
+                </div>
+                <div class="pack_3 pk">
+                    <div class="pk_btn">
+                        <span>Room only</span>
+                    </div>
+                    <div class="bk_bg">
+                        <h2>Room only</h2>
+                        <span class="phrase">곤고객 감사의 마음으로 곤지암리조트 객실이용과 함께<br>
+                            다양한 할인 패키지를 제공하고 있습니다.</span>
+                        <span>패키지 가격</span>
+                        <div class="s_con">
+                            <span class="big pink">150,000원</span>
+                            <span class="big">~(VAT포함)</span>
+                        </div>
+                        <span>상품구성</span>
+                        <div class="s_con">
+                            <span class="big">객실 1박</span>
+                        </div>
+                        <span>이용기간</span>
+                        <div class="s_con">
+                            <span class="big">2021.03.01~05.31</span>
+                        </div>
+                        <a href="#" class="more_btn">More view</a>
+                    </div>
+                </div>
+            </div>
+            <div class="M_Wrapper">
+                <div class="swiper-container M_cons1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mc1">
+                            <button class="mores">More</button>
+                        </div>
+                        <div class="swiper-slide mc2">
+                            <button class="mores">More</button>
+                        </div>
+                        <div class="swiper-slide mc3">
+                            <button class="mores">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab_contents promotion" id="fade2">
+            <div class="pro_wrap">
+                <div class="p_scroll">
+                    <div class="pro_c">
+                        <div class="pro_p"></div>
+                        <h2 class="pro_t">곤지암의 향기</h2>
+                        <span class="pro_t2">곤지암의 시그니처인 소나무를 모티브로 은은한 피톤치드향과 <br>
+                            프레쉬한 숲속 향기를 담아낸 세상에서 유일한 '곤지암의 향기'</span>
+                    </div>
+                    <div class="pro_c">
+                        <div class="pro_p p2"></div>
+                        <h2 class="pro_t">홈가드닝 클래스</h2>
+                        <span class="pro_t2">화담숲에서 만나는 홈 가드닝 클래스!<br>
+                            나만의 반려식물을 심고, 꾸며보는 체험 프로그램</span>
+                    </div>
+                    <div class="pro_c">
+                        <div class="pro_p p3"></div>
+                        <h2 class="pro_t">생태 숲 해설</h2>
+                        <span class="pro_t2">화담숲에서 살아가는 식물과 생물을<br>
+                            테마로 하는 생태 해설 프로그램</span>
+                    </div>
+                    <div class="pro_c">
+                        <div class="pro_p p4"></div>
+                        <h2 class="pro_t">미리시아 봄 메뉴 특선</h2>
+                        <span class="pro_t2">텐동, 아란치니, 마카롱 멘보샤 등 향기로운 봄과<br>
+                            세계 요리의 특별한 만남</span>
+                    </div>
+                    <div class="pro_c">
+                        <div class="pro_p p5"></div>
+                        <h2 class="pro_t">곤지암리조트 룸서비스(포장/배달)</h2>
+                        <span class="pro_t2">맛도 좋고 양도 많은 다양한 메뉴들을<br>
+                            간편하 주문하고 안전하게 식사하세요.</span>
+                    </div>
+                    <div class="pro_c">
+                        <div class="pro_p p6"></div>
+                        <h2 class="pro_t">담하 봄내음 반</h2>
+                        <span class="pro_t2">신선한 제철 식자재를 활용하여<br>
+                            건강하고 맛있는 한식 한상 차</span>
+                    </div>
+                    <div class="pro_c">
+                        <div class="pro_p p7"></div>
+                        <h2 class="pro_t">미라시아 중식 특선</h2>
+                        <span class="pro_t2">미라시아 중식 특선 요리입니다.<br>
+                            특별한 날을 더 특별하게!</span>
+                    </div>
+                    <div class="pro_c">
+                        <div class="pro_p p8"></div>
+                        <h2 class="pro_t">데일리 힐링</h2>
+                        <span class="pro_t2">리조트 투숙객을 위한 특별한 쉼의 시간</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab_contents logoshop" id="fade3">
+            <div class="l_wrap">
+                <div class="l_banner">
+                    <a href="#" class="l_btn">홈페이지 바로가기</a>
+                    <a href="#" class="l_btn">구매 예약</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <h1 class="title">Rooms</h1>
+        <ul class="tab_conlist">
+            <li data-id="fade4" class="on">프라임 P</li>
+            <li data-id="fade6">노블 N</li>
+            <li data-id="fade5">디럭스 D</li>
+            <li data-id="fade7">로얄 R</li>
+            <li data-id="fade8">스위트 S</li>
+            <li data-id="fade9">테마룸</li>
+        </ul>
+        <div class="tab_contents Rooms" id="fade4">
+            <div class="r_text">
+                <h1 class="r_subject">프라임</h1>
+                <p class="r_phr">직선의 심플함이 어우러진 모던한 공간</span>
+                <p class="r_con">남성미와 여성성을 동시에 추구하는 젊은 세대들의
+                    감각을 반영하여 모던한 디자인으로<br>
+                    특색 있는 공간을 연출하였습니다.</p>
+                <a href="html/Konjiam_resrot_room_prime.html" class="r_btn"><span>More View</span></a>
+            </div>
+            <a href="html/Konjiam_resrot_room_prime.html" class="r_mbtn"><span>More View</span></a>
+        </div>
+        <div class="tab_contents Rooms" id="fade6">
+            <div class="r_text">
+                <h1 class="r_subject">노블</h1>
+                <p class="r_phr">인생의 아름다움이 깊어지는 공간</span>
+                <p class="r_con">고급스럽고 우아한 아름다움을 추구하는 여성들을 위한 <br>
+                    인테리어에서 기능까지 섬세하게 배려한<br>
+                    아주 특별한 공간을 준비하였습니다.</p>
+                <a href="html/konjiam_resrot_room_Noble.html" class="r_btn"><span>More View</span></a>
+            </div>
+            <a href="html/konjiam_resrot_room_Noble.html"class="r_mbtn"><span>More View</span></a>
+        </div>
+        <div class="tab_contents Rooms" id="fade5">
+            <div class="r_text">
+                <h1 class="r_subject">디럭스</h1>
+                <p class="r_phr">자연속에서 누리는 진정한 휴식</span>
+                <p class="r_con">가끔은 바쁜 일상 속에서 벗어나 자연속에서 쉬고 싶은<br>
+                    그 마음을 잘 알기에 세상에서 가장 편안한 자연과<br>
+                    호흡하는 휴식공간을 마련하였습니다.</p>
+                <a href="" class="r_btn"><span>More View</span></a>
+            </div>
+            <a href="#"class="r_mbtn"><span>More View</span></a>
+        </div>
+        </div>
+        <div class="tab_contents Rooms" id="fade7">
+            <div class="r_text">
+                <h1 class="r_subject">로얄</h1>
+                <p class="r_phr">리더들을 위한 최고의 품격과 여유의 공간</span>
+                <p class="r_con">성공적인 삶을 살아온 이 시대의 리더를 위한 공간으로<br>
+                    당당한 자부심이 느껴지면서도 풍요로운 여유를<br>
+                    즐길 수 있도록 배려하였습니다.</p>
+                <a href="#" class="r_btn"><span>More View</span></a>
+            </div>
+            <a href="#"class="r_mbtn"><span>More View</span></a>
+        </div>
+        <div class="tab_contents Rooms" id="fade8">
+            <div class="r_text">
+                <h1 class="r_subject">스위트</h1>
+                <p class="r_phr">곤지암리조트 최상위 객실</span>
+                <p class="r_con">곤지암리조트에서 가장 넓은 객설로서 슬로프 전경이<br>
+                    한눈에 들어오는 뷰를 가지고 있습니다.<br>
+                    최고의 객실에서 힐링의 의미를 되새겨보시기 바랍니다.</p>
+                <a href="#" class="r_btn"><span>More View</span></a>
+            </div>
+            <a href="#"class="r_mbtn"><span>More View</span></a>
+        </div>
+        <div class="tab_contents Rooms" id="fade9">
+            <div class="r_text">
+                <h1 class="r_subject">테마룸</h1>
+                <p class="r_phr">야구, 영화, 힐링테마 등 이색 디자인과
+                    체험을 통해 즐거움과 특별한 경험을
+                    선사해 드립니다.</p>
+                <a href="#" class="r_btn"><span>More View</span></a>
+            </div>
+            <a href="#"class="r_mbtn"><span>More View</span></a>
+        </div>
+    </section>
+    <div class="f_bg_2"></div>
+    <section class="sec4">
+        <div class="NT_con">
+            <div class="NT_t_con">
+                <div class="Nt_t">
+                    <h1>공지사항</h1>
+                    <span class="material-icons-outlined add">
+                        add
+                    </span>
+                </div>
+                <div class="N_wrap">
+                    <div class="N_list">
+                        <span class="r_border">이벤트</span>
+                        <span>가정愛 달 이벤트 (5/1~5/31)</span>
+                        <span>2021.04.30</span>
+                    </div>
+                    <div class="N_list">
+                        <span class="r_border">일반공지</span>
+                        <span>식음 및 부대시설 운영 (5/1~)</span>
+                        <span>2021.04.30</span>
+                    </div>
+                    <div class="N_list">
+                        <span class="r_border">이용안내</span>
+                        <span>곤지암루지 360° 4/30 오픈!</span>
+                        <span>2021.04.29</span>
+                    </div>
+                    <div class="N_list">
+                        <span class="r_border">이벤트</span>
+                        <span>정상 가족 놀이터 4/30 오픈!</span>
+                        <span>2021.04.29</span>
+                    </div>
+                </div>
+                <div class="Nt_t t2">
+                    <h1>행사문의</h1>
+                    <span class="material-icons-outlined add2">
+                        add
+                    </span>
+                </div>
+                <div class="Q_con">
+                    <div class="Q_wrap">
+                        <h1>미팅 플래너의 세심한 지원담당 </h1>
+                        <span class="cmt">'미팅 플래너'를 배정하여 행사 별 목적과 예산에 맞는 최적의 솔루션을 제공합니다.</span>
+                        <table class="Q_chart">
+                            <caption class="Q_num"><span class="material-icons-outlined call">
+                                    support_agent
+                                </span><span><b>전화문의</b> / 031-8026-5821</span></caption>
+                            <tr>
+                                <td>담당분야</td>
+                                <td>E-mail</td>
+                            </tr>
+                            <tr>
+                                <td>LG계열사 / 학회</td>
+                                <td>yw0365@sni.co.kr</td>
+                            </tr>
+                            <tr>
+                                <td>제약의료</td>
+                                <td>hopang831@sni.co.kr</td>
+                            </tr>
+                            <tr>
+                                <td>제조 / 대학교</td>
+                                <td>theski@sni.co.kr</td>
+                            </tr>
+                            <tr>
+                                <td>유통서비스 / 해외여행사 / 전문기술서비스(법무,회계) / 협회</td>
+                                <td>doyoon@sni.co.kr</td>
+                            </tr>
+                            <tr>
+                                <td>국가행정 / 공공기관 / 연구기관</td>
+                                <td>kjc007@sni.co.kr</td>
+                            </tr>
+                            <tr>
+                                <td>공공행정(도,시,군,구청) / 금융 / 초·중·고, 프리미엄 캠프</td>
+                                <td>entpgus1@sni.co.kr</td>
+                            </tr>
+                            <tr>
+                                <td>학회 / 방송 / 언론기관 / 휴양소</td>
+                                <td>kimmy@sni.co.kr</td>
+                            </tr>
+                        </table>
+                        <div class="M_c_cmt">
+                            <div><span class="material-icons-outlined receipt">
+                                receipt</span>
+                            <span>견적요청</span></div>
+                            <span>견적 요청은 PC버전에서만 가능 합니다.</span>    
+                        </div>
+                        <form class="C_Q">
+                            <div class="c_top">
+                                <span class="material-icons-outlined receipt">
+                                    receipt</span>
+                                    <span class="c_cmt">견적요청</span>
+                                <span class="c_cmt"><b>견적요청</b> / 견적요청시 아래 내용을 작성해 주세요.</span>
+                            </div>
+                            <table class="C_chart">
+                                <h1>고객정보</h1>
+                                <tr>
+                                    <td>고객명</td>
+                                    <td><input type="text" id="name" name="name" maxlength="12" autocomplete="off">
+                                        <span id="n_check" class="alret"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>연락처</td>
+                                    <td><input type="text" id="number" name="number" maxlength="13" autocomplete="off"
+                                            class="p_num">
+                                        <span class="ch_cmt">* '-'빼고 입력</span>
+                                        <span id="p_check" class="alret"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td><input type="text" id="email" name="email" autocomplete="off">
+                                        <span class="ch_cmt">ex) abc_123@abcdef.com</span>
+                                        <span id="e_check" class="alret"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>단체 유형</td>
+                                    <td><span class="c_btext"><input type="checkbox" name="checkbox" id="c_box"
+                                                onclick='doOpenCheck(this)'>사업자</span><br>
+                                        <span class="c_btext"><input type="checkbox" name="checkbox" id="c_box"
+                                                onclick='doOpenCheck(this)'>단체</span>
+                                        <div class="c_ex">
+                                            <span>
+                                                *사업자 : 사업자번호가 있는 기업 혹은 기관은<br>
+                                                ‘사업자’ 자에 체크 후, '고객명’에 기업명 혹은 기관명 기재
+                                            </span>
+                                            <span>
+                                                *단체 : 개인 단체(동호회, 모임 등)
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="C_chart c_2">
+                                <h1>행사문의</h1>
+                                <tr>
+                                    <td>행사명</td>
+                                    <td><input type="text" name="f_name" id="f_name">
+                                        <span id="f_check" class="alret"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>행사기간</td>
+                                    <td class="r_days"><input type="text" class="st">
+                                        ~
+                                        <input type="text" class="fn">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>인원 수</td>
+                                    <td><input type="number" name="m_num" id="m_num" min="1">
+                                        <span id="m_check" class="alret">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>객실</td>
+                                    <td>
+                                        <span class="c_btext"><input type="checkbox" name="checkbox2" id="c2_box"
+                                                onclick='checkOnlyOne(this)'>프라임(2인)</span>
+                                        <span class="c_btext">
+                                            <input type="checkbox" name="checkbox2" id="c_box"
+                                                onclick='checkOnlyOne(this)'>디럭스(4인)</span>
+                                        <span class="c_btext">
+                                            <input type="checkbox" name="checkbox2" id="c_box"
+                                                onclick='checkOnlyOne(this)'>노블(5인)</span>
+                                        <span class="c_btext">
+                                            <input type="checkbox" name="checkbox2" id="c_box"
+                                                onclick='checkOnlyOne(this)'>로얄(6인)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>식음업장</td>
+                                    <td>
+                                        <span class="c_btext c_b2"><input type="checkbox" name="checkbox3" id="c2_box"
+                                            onclick='checkOnlyOne2(this)'>조식</span>
+                                    <span class="c_btext c_b3">
+                                        <input type="checkbox" name="checkbox3" id="c_box"
+                                            onclick='checkOnlyOne2(this)'>석식</span>
+                                    <span class="c_btext">
+                                        <input type="checkbox" name="checkbox3" id="c_box"
+                                            onclick='checkOnlyOne2(this)'>중식</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>세미나실</td>
+                                    <td><span class="c_btext">
+                                        <input type="checkbox" name="checkbox2" id="c_box">사용</span></td>
+                                </tr>
+                                <tr>
+                                    <td>요청사항</td>
+                                    <td><textarea ></textarea></td>
+                                </tr>
+                            </table>
+                        </form>
+                        <button type="submit" class="N_Submit">저장하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="etc_con">
+            <div class="service">
+                <h1>고객센터</h1>
+                <span class="e_cmt">고객님들의 편의를 도모하고<br>
+                    쉼터를 제공하기 위한 고객센터 입니다.</span>
+                <button class="N_Submit">바로 가기</button>
+            </div>
+            <div class="SNS">
+                <h1>SNS</h1>
+                <span class="e_cmt">각종 정보를 최신으로 전해드립니다.</span>
+                <div class="s_icons">
+                    <a href="https://ko-kr.facebook.com/KonjiamResort/" target="_blank"></a>
+                    <a href="https://www.instagram.com/konjiam_resort/" target="_blank"></a>
+                    <a href="https://www.youtube.com/channel/UCfWm7FngyesM4RfHw30TUQw" target="_blank"></a>
+                    <a href="https://blog.naver.com/konjiamblog" target="_blank"></a>
+                    <a href="#" target="_blank"></a>
+                </div>
+            </div>
+            <div class="weather_2">
+                <h1>곤지암 날씨</h1>
+                <span class="e_cmt">실시간 곤지암의 날씨입니다.</span>
+                <div class="w_icon"></div>
+                <span class="ctemp"></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="f_wrap">
+            <a href="#top" class="go_up"></a>
+            <div class="f_left">
+                <a href="#" class="f_logo"></a>
+                <span>개인정보처리방침 &#x0007C; 이용약관 &#x0007C; 영상정보처리기기 운영관리 &#x0007C; 방침이메일 &#x0007C; 무단수집 &#x0007C; 거부사이트맵</span>
+                <span>LG 정도경영 &#x0007C; S&ICorp. &#x0007C; 브랜드 &#x0007C; 도용제보 &#x0007C; 제휴문의 &#x0007C; 인재채용</span>
+                <span>곤지암리조트 : 경기도 광주시 도척면 도척윗로 278 &#x0007C; 본사 : 서울특별시 강서구 마곡중앙로 150, S&I 강서사옥, S&ICorp.</span>
+                <span>회원/예약문의 : 02-3777-2100 &#x0007C; 사업자등록번호 : 107-86-09325 S&ICorp. &#x0007C; 통신판매업신고번호 : 제2018-서울강서-0325호</span>
+                <span>대표이사 : 이동열 &#x0007C; 개인정보보호책임자 : 정현</span>
+                <span>COPYRIGHT(C) BY S&I Corp. ALL RIGHTS RESERVED.</span>
+                <div class="f_icons">
+                    <a href="https://ko-kr.facebook.com/KonjiamResort/" target="_blank"></a>
+                    <a href="https://www.instagram.com/konjiam_resort/" target="_blank"></a>
+                    <a href="https://www.youtube.com/channel/UCfWm7FngyesM4RfHw30TUQw" target="_blank"></a>
+                    <a href="https://blog.naver.com/konjiamblog" target="_blank"></a>
+                    <a href="#" target="_blank"></a>
+                </div>
+            </div>
+            <div class="f_right">
+                <span>곤지암 리조트 대표번호</span>
+                <h1>1661-8787</h1>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/Konjiam_resort_main.js"></script>
+</body>
+
+</html>

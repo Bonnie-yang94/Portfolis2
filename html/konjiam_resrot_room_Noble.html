@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>곤지암리조트 | 객실안내 | 프라임</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/konjuam_resort-room_detail_noble.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="nv_con">
+            <a href="../html/Konjiam_resort_main.html" class="top_logo"></a>
+            <li>리조트 안내</a></li>
+            <li>예약</a></li>
+            <li>프로모션</li>
+            <li>리조트 뉴스</li>
+            <li>멤버쉽 안내</li>
+        </ul>
+        <div class="nav_all">
+            <ul class="sub_menu list1">
+                <li><a href="../html/Konjiam_resort_intro.html">브랜드소개</a></li>
+                <li><a href="#">B/I 소개</a></li>
+                <li><a href="#">가이드 맵</a></li>
+                <li><a href="#">생체 하천</a></li>
+            </ul>
+            <ul class="sub_menu list2">
+                <li><a href="../html/Konjuam_resort_room.html">객실 안내</a></li>
+                <li><a href="#">객실 예약</a></li>
+                <li><a href="#">예약조회/변경</a></li>
+            </ul>
+            <ul class="sub_menu list3">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">패키지</a></li>
+                <li><a href="#">프로모션</a></li>
+                <li><a href="#">로고샵</a></li>
+            </ul>
+            <ul class="sub_menu list4">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">채용공고</a></li>
+                <li><a href="#">보도자료</a></li>
+            </ul>
+            <ul class="sub_menu list5">
+                <li><a href="#">가입안내</a></li>
+                <li><a href="#">콘도회원 라운지</a></li>
+                <li><a href="#">마이서비스</a></li>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <h1 class="title">노블</h1>
+        <ul class="noble_list">
+            <li data-id="fade1" class="on">A Type</li>
+            <li data-id="fade2">B Type</li>
+            <li data-id="fade3">C Type</li>
+        </ul>
+        <div class="tab_contents Noble_A" id="fade1">
+            <div class="allwrap">
+                <span class="CMT">인생의 아름다움이 깊어지는 공간, 섬세한 인테리어와 기능이 있는 노블 A타입입니다.</span>
+                <div class="wraps1">
+                    <div class="swiper-container r_photo">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide r1"></div>
+                            <div class="swiper-slide r2"></div>
+                            <div class="swiper-slide r3"></div>
+                            <div class="swiper-slide r4"></div>
+                            <div class="swiper-slide r5"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="reservation">
+                        <div class="r_sec2">
+                            <div class="start_day">
+                                <span>체크인</span>
+                                <input type="text" class="st" id="today">
+                                <div class="calender"></div>
+                            </div>
+                            <div class="next_day">
+                                <span>체크아웃</span>
+                                <input type="text" class="fn" id="nextday">
+                                <div class="calender"></div>
+                            </div>
+                            <div class="cal_day">
+                                <input type="text" id="cal" readonly>
+                            </div>
+                        </div>
+                        <button class="r_Submit" type="submit">예약하기</button>
+                    </div>
+                </div>
+                <div class="wraps2">
+                    <table class="about_r">
+                        <caption>객실구성</caption>
+                        <tr>
+                            <td>면적</td>
+                            <td>152m2형</td>
+                        </tr>
+                        <tr>
+                            <td>침실형태</td>
+                            <td>더블:1 + 싱글:1, 온돌:1</td>
+                        </tr>
+                        <tr>
+                            <td>정원 수</td>
+                            <td>6명</td>
+                        </tr>
+                        <tr>
+                            <td>위치</td>
+                            <td>E/W 빌리지</td>
+                        </tr>
+                        <tr>
+                            <td>객실 수</td>
+                            <td>46개</td>
+                        </tr>
+                    </table>
+                    <div class="d_con cons1">
+                        <h1>객실도면</h1>
+                        <div class="diagram1"></div>
+                    </div>
+                </div>
+                <div class="wraps3">
+                    <h1>객실서비스</h1>
+                    <div class="r_service">
+                        <div class="wifi">
+                            <img src="../img/metrial/room_detail/wifi.png" alt="wifi">
+                            <span>전 객실<br>
+                                무선인터넷 연결 가능</span>
+                        </div>
+                        <div class="gym">
+                            <img src="../img/metrial/room_detail/gym.png" alt="gym">
+                            <span>휘트니스센터<br>
+                                무료 이용</span>
+                        </div>
+                        <div class="w_drink">
+                            <img src="../img/metrial/room_detail/w_drink.png" alt="w_drink">
+                            <span>웰컴 서비스<br>
+                                (생수 / 투숙 기간 1회 제공)</span>
+                        </div>
+                    </div>
+                    <h1>객실 품목</h1>
+                    <div class="r_goods">
+                        <div class="elec">
+                            <img src="../img/metrial/room_detail/elec.png" alt="elec">
+                            <h2>가전제품</h2>
+                            <span>OLED TV (거실 1, 방1)</span>
+                        </div>
+                        <div class="kitchen">
+                            <img src="../img/metrial/room_detail/kitchen.png" alt="kitchen">
+                            <h2>주방용품</h2>
+                            <span class="bold">미취사형</span>
+                            <span>냉장고, 워터 포트,<br>
+                                커피머신, 캡슐커피</span>
+                            <span class="bold">취사형</span>
+                            <span>냉장고, 주전자,<br>
+                                기본 주방용품, 전기밥솥,<br>
+                                전자레인지, 인덕션(2구)</span>
+                        </div>
+                        <div class="bath">
+                            <img src="../img/metrial/room_detail/bodywash.png" alt="bath">
+                            <h2>욕실용품</h2>
+                            <span>샴푸, 바디워시</span>
+                        </div>
+                        <div class="etc">
+                            <img src="../img/metrial/room_detail/hairdryer.png" alt="etc">
+                            <h2>생활용품</h2>
+                            <span>드라이기, 빨래 건조대</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+        <div class="tab_contents Noble_B" id="fade2">
+            <div class="allwrap">
+                <span class="CMT">인생의 아름다움이 깊어지는 공간, 섬세한 인테리어와 기능이 있는 노블 B타입 입니다.</span>
+                <div class="wraps1">
+                    <div class="swiper-container r_photo">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide r6"></div>
+                            <div class="swiper-slide r7"></div>
+                            <div class="swiper-slide r8"></div>
+                            <div class="swiper-slide r9"></div>
+                            <div class="swiper-slide r10"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="reservation">
+                        <div class="r_sec2">
+                            <div class="start_day">
+                                <span>체크인</span>
+                                <input type="text" class="st" id="today2">
+                                <div class="calender"></div>
+                            </div>
+                            <div class="next_day">
+                                <span>체크아웃</span>
+                                <input type="text" class="fn" id="nextday2">
+                                <div class="calender"></div>
+                            </div>
+                            <div class="cal_day">
+                                <input type="text" id="cal2" readonly>
+                            </div>
+                        </div>
+                        <button class="r_Submit" type="submit">예약하기</button>
+                    </div>
+                </div>
+                <div class="wraps2">
+                    <table class="about_r">
+                        <caption>객실구성</caption>
+                        <tr>
+                            <td>면적</td>
+                            <td>152m2형</td>
+                        </tr>
+                        <tr>
+                            <td>침실형태</td>
+                            <td>트윈:1, 트윈:1</td>
+                        </tr>
+                        <tr>
+                            <td>정원 수</td>
+                            <td>6명</td>
+                        </tr>
+                        <tr>
+                            <td>위치</td>
+                            <td>E/W 빌리지</td>
+                        </tr>
+                        <tr>
+                            <td>객실 수</td>
+                            <td>20개</td>
+                        </tr>
+                    </table>
+                    <div class="d_con cons2">
+                        <h1>객실도면</h1>
+                        <div class="diagram2"></div>
+                    </div>
+                </div>
+                <div class="wraps3">
+                    <h1>객실서비스</h1>
+                    <div class="r_service">
+                        <div class="wifi">
+                            <img src="../img/metrial/room_detail/wifi.png" alt="wifi">
+                            <span>전 객실<br>
+                                무선인터넷 연결 가능</span>
+                        </div>
+                        <div class="gym">
+                            <img src="../img/metrial/room_detail/gym.png" alt="gym">
+                            <span>휘트니스센터<br>
+                                무료 이용</span>
+                        </div>
+                        <div class="w_drink">
+                            <img src="../img/metrial/room_detail/w_drink.png" alt="w_drink">
+                            <span>웰컴 서비스<br>
+                                (생수 / 투숙 기간 1회 제공)</span>
+                        </div>
+                    </div>
+                    <h1>객실 품목</h1>
+                    <div class="r_goods">
+                        <div class="elec">
+                            <img src="../img/metrial/room_detail/elec.png" alt="elec">
+                            <h2>가전제품</h2>
+                            <span>OLED TV (거실 1, 방1)</span>
+                        </div>
+                        <div class="kitchen">
+                            <img src="../img/metrial/room_detail/kitchen.png" alt="kitchen">
+                            <h2>주방용품</h2>
+                            <span class="bold">미취사형</span>
+                            <span>냉장고, 워터 포트,<br>
+                                커피머신, 캡슐커피</span>
+                            <span class="bold">취사형</span>
+                            <span>냉장고, 주전자,<br>
+                                기본 주방용품, 전기밥솥,<br>
+                                전자레인지, 인덕션(2구)</span>
+                        </div>
+                        <div class="bath">
+                            <img src="../img/metrial/room_detail/bodywash.png" alt="bath">
+                            <h2>욕실용품</h2>
+                            <span>샴푸, 바디워시</span>
+                        </div>
+                        <div class="etc">
+                            <img src="../img/metrial/room_detail/hairdryer.png" alt="etc">
+                            <h2>생활용품</h2>
+                            <span>드라이기, 빨래 건조대</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+        <div class="tab_contents Noble_C" id="fade3">
+            <div class="allwrap">
+                <span class="CMT">인생의 아름다움이 깊어지는 공간, 섬세한 인테리어와 기능이 있는 노블 C타입 입니다.</span>
+                <div class="wraps1">
+                    <div class="swiper-container r_photo">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide r11"></div>
+                            <div class="swiper-slide r12"></div>
+                            <div class="swiper-slide r13"></div>
+                            <div class="swiper-slide r14"></div>
+                            <div class="swiper-slide r15"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="reservation">
+                        <div class="r_sec2">
+                            <div class="start_day">
+                                <span>체크인</span>
+                                <input type="text" class="st" id="today3">
+                                <div class="calender"></div>
+                            </div>
+                            <div class="next_day">
+                                <span>체크아웃</span>
+                                <input type="text" class="fn" id="nextday3">
+                                <div class="calender"></div>
+                            </div>
+                            <div class="cal_day">
+                                <input type="text" id="cal3" readonly>
+                            </div>
+                        </div>
+                        <button class="r_Submit" type="submit">예약하기</button>
+                    </div>
+                </div>
+                <div class="wraps2">
+                    <table class="about_r">
+                        <caption>객실구성</caption>
+                        <tr>
+                            <td>면적</td>
+                            <td>152m2형</td>
+                        </tr>
+                        <tr>
+                            <td>침실형태</td>
+                            <td>트윈:1, 더블:1, 온돌:1</td>
+                        </tr>
+                        <tr>
+                            <td>정원 수</td>
+                            <td>6명</td>
+                        </tr>
+                        <tr>
+                            <td>위치</td>
+                            <td>L 빌리지</td>
+                        </tr>
+                        <tr>
+                            <td>객실 수</td>
+                            <td>60개</td>
+                        </tr>
+                    </table>
+                    <div class="d_con cons3">
+                        <h1>객실도면</h1>
+                        <div class="diagram3"></div>
+                    </div>
+                </div>
+                <div class="wraps3">
+                    <h1>객실서비스</h1>
+                    <div class="r_service">
+                        <div class="wifi">
+                            <img src="../img/metrial/room_detail/wifi.png" alt="wifi">
+                            <span>전 객실<br>
+                                무선인터넷 연결 가능</span>
+                        </div>
+                        <div class="gym">
+                            <img src="../img/metrial/room_detail/gym.png" alt="gym">
+                            <span>휘트니스센터<br>
+                                무료 이용</span>
+                        </div>
+                        <div class="w_drink">
+                            <img src="../img/metrial/room_detail/w_drink.png" alt="w_drink">
+                            <span>웰컴 서비스<br>
+                                (생수 / 투숙 기간 1회 제공)</span>
+                        </div>
+                    </div>
+                    <h1>객실 품목</h1>
+                    <div class="r_goods">
+                        <div class="elec">
+                            <img src="../img/metrial/room_detail/elec.png" alt="elec">
+                            <h2>가전제품</h2>
+                            <span>OLED TV (거실 1, 방1)</span>
+                        </div>
+                        <div class="kitchen">
+                            <img src="../img/metrial/room_detail/kitchen.png" alt="kitchen">
+                            <h2>주방용품</h2>
+                            <span class="bold">미취사형</span>
+                            <span>냉장고, 워터 포트,<br>
+                                커피머신, 캡슐커피</span>
+                            <span class="bold">취사형</span>
+                            <span>냉장고, 주전자,<br>
+                                기본 주방용품, 전기밥솥,<br>
+                                전자레인지, 인덕션(2구)</span>
+                        </div>
+                        <div class="bath">
+                            <img src="../img/metrial/room_detail/bodywash.png" alt="bath">
+                            <h2>욕실용품</h2>
+                            <span>샴푸, 바디워시</span>
+                        </div>
+                        <div class="etc">
+                            <img src="../img/metrial/room_detail/hairdryer.png" alt="etc">
+                            <h2>생활용품</h2>
+                            <span>드라이기, 빨래 건조대</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </section>
+    <footer>
+        <div class="f_wrap">
+            <div class="f_left">
+                <a href="#" class="f_logo"></a>
+                <span>개인정보처리방침 &#x0007C; 이용약관 &#x0007C; 영상정보처리기기 운영관리 &#x0007C; 방침이메일 &#x0007C; 무단수집 &#x0007C;
+                    거부사이트맵</span>
+                <span>LG 정도경영 &#x0007C; S&ICorp. &#x0007C; 브랜드 &#x0007C; 도용제보 &#x0007C; 제휴문의 &#x0007C; 인재채용</span>
+                <span>곤지암리조트 : 경기도 광주시 도척면 도척윗로 278 &#x0007C; 본사 : 서울특별시 강서구 마곡중앙로 150, S&I 강서사옥, S&ICorp.</span>
+                <span>회원/예약문의 : 02-3777-2100 &#x0007C; 사업자등록번호 : 107-86-09325 S&ICorp. &#x0007C; 통신판매업신고번호 :
+                    제2018-서울강서-0325호</span>
+                <span>대표이사 : 이동열 &#x0007C; 개인정보보호책임자 : 정현</span>
+                <span>COPYRIGHT(C) BY S&I Corp. ALL RIGHTS RESERVED.</span>
+                <div class="f_icons">
+                    <a href="https://ko-kr.facebook.com/KonjiamResort/" target="_blank"></a>
+                    <a href="https://www.instagram.com/konjiam_resort/" target="_blank"></a>
+                    <a href="https://www.youtube.com/channel/UCfWm7FngyesM4RfHw30TUQw" target="_blank"></a>
+                    <a href="https://blog.naver.com/konjiamblog" target="_blank"></a>
+                    <a href="#" target="_blank"></a>
+                </div>
+            </div>
+            <div class="f_right">
+                <span>곤지암 리조트 대표번호</span>
+                <h1>1661-8787</h1>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/konjiam_resrot_room_many.js"> </script>
+</body>
+
+</html>
