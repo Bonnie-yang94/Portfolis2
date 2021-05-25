@@ -46,26 +46,16 @@ $(".fn").datepicker({
 var d = new Date();
 var week = new Array('SUN', 'MON', 'TUE', 'WED',
     'THU', 'FRI', 'SAT', 'SUN');
-var currentDate = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
-var result = document.getElementById("today");
-result.innerHTML = currentDate;
+    document.querySelector("#today").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
 
-var currentDate = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + (d.getDate() + 1);
-var result = document.getElementById("nextday");
-result.innerHTML = currentDate;
+document.querySelector("#nextday").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + (d.getDate() + 1);
 
+document.querySelector("#cal").value = 1 + "박"
 
 var currentDate = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate() + " " + week[d.getDay()];
 var result = document.getElementById("now_day");
 result.innerHTML = currentDate;
 
-
-$('.st').click(function () {
-    $("#today").hide();
-});
-$('.fn').click(function () {
-    $("#nextday").hide();
-});
 
 function printTime() {
     var clock = document.getElementById("now_time");

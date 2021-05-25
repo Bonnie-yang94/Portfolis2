@@ -23,8 +23,8 @@ var swiper = new Swiper(".r_photo", {
 $.datepicker.setDefaults($.datepicker.regional['ko']);
 function showDays() {
     var currentDate = new Date();
-    var start = $('.st').datepicker('getDate');
-    var end = $('.fn').datepicker('getDate');
+    var start = $('#today').datepicker('getDate');
+    var end = $('#nextday').datepicker('getDate');
     if (!start || !end) return;
     var days = (end - start) / 1000 / 60 / 60 / 24;
     $('#cal').val(days + '박');
