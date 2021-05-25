@@ -891,7 +891,6 @@ div.p_scroll::-webkit-scrollbar-thumb {
     left: 50%;
     opacity: 0;
     transition: all ease-in 0.3s;
-    border-right: 7px solid #fff;
     cursor: pointer;
 }
 .hover_event h1{
