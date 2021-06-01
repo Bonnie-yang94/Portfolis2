@@ -1,5 +1,6 @@
 @charset "UTF-8";
 body{ min-width: 320px;
+    overflow: hidden;
 }
 .top_logo_M{
     display: block;
@@ -444,4 +445,8 @@ section.sec4 {
 }
 .slider_wraps {
   margin-top: 0px;
+}
+.swiper-wrapper.se4_conwrap{
+    display: flex;
+    flex-direction: column;
 }

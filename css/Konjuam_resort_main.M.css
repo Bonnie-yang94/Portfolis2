@@ -629,7 +629,7 @@ button.N_Submit{
     text-align: center;
     color: #717171;
     font-size: 1.4rem;
-    width: 346px;
+    width: 100%;
     line-height: 1.4rem;
     margin-bottom: 40px;
 }
@@ -711,4 +711,7 @@ button.N_Submit{
 }
 .f_left span:nth-child(6)::after {
     top: 22px;
+}
+.service, .SNS, .weather_2 {
+    width: 100%;
 }
