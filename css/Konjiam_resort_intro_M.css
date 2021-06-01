@@ -310,15 +310,138 @@ section.sec3 {
 }
 .sc3_con {
     width: 86%;
-    height: 148px;
+    height: 217px;
     overflow-y: hidden;
 }
 .car_con1>h1 {
     font-size: 1.5rem;
-    margin-right: 15px;
+    margin-right: 10px;
     position: relative;
     margin-bottom: 0;
+    margin-right: 38px;
 }
 .car_con1 .c_c:nth-child(1) h1 {
-    margin-right: 10px;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+.place, .trans {
+    font-size: 2rem;
+    margin-right: 9px;
+}
+.c_c span {
+    width: 100px;
+    font-size: 1.1rem;
+}
+.car_con1 .car_c .c_c:nth-child(2),.c_c:nth-child(3){
+    display: none;
+}
+.car_wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+.sec3 h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0
+}
+.car_con1 {
+    margin-bottom: 0;
+}
+.tab_contents {
+    height: 217px;
+}
+.car_con2 .c_c.dis_M span.way2{
+    display: none;
+}
+.car_con2 .c_c.dis_M h1{
+    display: none;
+}
+.car_con2 .c_c.dis_H{
+    display: none;
+}
+.car_con2>h1 {
+    text-align: left;
+    margin-right: 61px;
+    width: 84px;
+}
+span.way1.M{
+    display: block;
+    word-break: keep-all;
+}
+span.way1.web{
+    display: none;
+}
+.car_con1, .car_con2 {
+    justify-content: center;
+}
+.car_con1>h1::after {
+    height: 52px;
+    right: -68px;
+}
+.car_con2>h1::after {
+    height: 63px;
+    right: -53px;
+}
+.bus_wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 81px;
+}
+.seoul{
+    display: none;
+}
+.keonggi{
+    display: none;
+}
+.s_count{
+    display: none;
+}
+div.subway{
+    background: url(../img/metrial/sub1_sec3/M_Subway.png) no-repeat;
+    background-size: cover;
+    width: 276px;
+    height: 65px;
+}
+.sd3_icons {
+    margin-top: 70px;
+    width: 90%
+}
+.push {
+    width: 84px;
+    height: 84px;
+}
+.sd3_icons::after {
+    top: -60px;
+}
+.p_wrap {
+    background:url(../img/metrial/sub1_sec3/M_pickup.png) no-repeat;
+    background-size: cover;
+    width: 245px;
+    height: 126px;
+    margin:58px auto;
+}
+.p_wrap h1, .p_wrap span , .p_wrap div{
+    display: none;
+}
+button.sd3_submmit {
+    display: none;
+}
+section.sec4 {
+    margin-top: 80px;
+}
+.sec4>h1 {
+    font-size: 1.8rem;
+    margin-bottom: 45px;
+}
+.sec4 .cmt {
+    display: none;
+}
+.slider_wraps {
+  margin-top: 0px;
 }

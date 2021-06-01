@@ -35,14 +35,14 @@ $(".push").click(function () {
         .siblings('.tab_contents').fadeOut(300);
 });
 
-var swiper4 = new Swiper(".se4_con", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    }
-});
+// var swiper4 = new Swiper(".se4_con", {
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     autoplay: {
+//         delay: 3000,
+//         disableOnInteraction: false,
+//     }
+// });
 $(document).ready(function () {
     $(".go_up").click(function (event) {
         event.preventDefault();
@@ -81,6 +81,4 @@ if ($(window).width() < 640) {
             disableOnInteraction: false,
         }
     });
-
-
 }

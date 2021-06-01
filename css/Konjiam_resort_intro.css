@@ -946,3 +946,6 @@ section.sec4::after{
     right: 4%;
     cursor: pointer;
 }
+span.way1.M{
+    display: none;
+}
