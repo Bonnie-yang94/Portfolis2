@@ -643,6 +643,10 @@ caption{
     font-weight: bold;
     transform: scale(1.2);
 }
+ul.noble_list li.on{
+    font-weight: bold;
+    transform: scale(1.2);
+}
 .noble_list li:last-child{
     margin-right: 0;
 }

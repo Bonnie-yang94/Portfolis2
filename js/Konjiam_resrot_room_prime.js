@@ -47,19 +47,17 @@ $(".fn").datepicker({
 });
 
 var d = new Date();
+var day = new String(d.getDate());
+var nextday = new String(d.getDate()+1);
+day = day >=10 ? day:'0' + day;
+nextday = nextday >=10 ? nextday:'0' + nextday;
 var week = new Array('SUN', 'MON', 'TUE', 'WED',
     'THU', 'FRI', 'SAT', 'SUN');
-document.querySelector("#today").value= d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
-// document.querySelector("#today2").value= d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
-// document.querySelector("#today3").value= d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+    document.querySelector("#today").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + day;
 
-document.querySelector("#nextday").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + (d.getDate() + 1);
-// document.querySelector("#nextday2").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + (d.getDate() + 1);
-// document.querySelector("#nextday3").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + (d.getDate() + 1);
+document.querySelector("#nextday").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + nextday;
 
 document.querySelector("#cal").value = 1 + "박"
-// document.querySelector("#cal2").value = 1 + "박"
-// document.querySelector("#cal3").value = 1 + "박"
 
 $(".tab_contents").hide().eq(0).show();
 $("ul.noble_list li").click(function () {
