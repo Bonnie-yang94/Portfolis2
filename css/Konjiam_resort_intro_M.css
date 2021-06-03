@@ -446,3 +446,124 @@ section.sec4 {
 .slider_wraps {
     margin-top: 0px;
 }
+.CMT {
+    background: #F5F5F4;
+    width: 100%;
+    height: 350px;
+    margin: 80px 0 0 0;
+    padding: 100px 0 0 20px;
+}
+.sec4 .slider_wraps {
+    flex-direction: column;
+}
+.photo {
+    width: 240px;
+    height: 132px;
+    position: absolute;
+    right: 3%;
+}
+.photo2{
+    width: 240px;
+    height: 132px;
+    position: absolute;
+    right: 3%;
+}
+.photo3{
+    width: 240px;
+    height: 132px;
+    position: absolute;
+    right: 3%;
+}
+.photo4{
+    width: 240px;
+    height: 132px;
+    position: absolute;
+    right: 3%;
+}
+.CMT h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.CMT span {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+.CMT span.m_view {
+    font-size: 1.8rem;
+}
+.CMT span.m_view::before {
+    height: 1px;
+    top: 17px;
+    left: 136px;
+}
+.CMT span.m_view::after {
+    width: 150px;
+    height: 1px;
+    top: 23px;
+    left: 0;
+}
+.CMT span:nth-child(4) {
+    margin-bottom: 23px;
+}
+.sec4_slide4 .CMT span.m_view {
+    margin-top: 40px;
+}
+.CMT span .bold {
+    font-size: 1.5rem;
+}
+.go_up {
+    width: 30px;
+    height: 30px;
+    top: -34%;
+    right: 4%;
+}
+.f_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    background: #001326;
+    width: 100%;
+    padding-left: 20px;
+}
+.f_right {
+    display: none;
+}
+.f_logo {
+    width: 130px;
+    height: 29px;
+    margin-bottom: 20px;
+}
+.f_left span {
+    width: 86%;
+    font-size: 1.2rem;
+}
+.f_left span:nth-child(2),.f_left span:nth-child(3){
+    display: none;
+}
+.f_left span:nth-child(4){
+    margin-bottom: 17px;
+}
+.f_left span:nth-child(4)::after{
+    content: "";
+    background: #919191;
+    width: 97px;
+    height: 1px;
+    position: absolute;
+    bottom: 188px;
+    left: 21px;
+}
+.f_left span:nth-child(7) {
+    margin-bottom: 10px;
+}
+.f_left span:nth-child(6)::after {
+    top: 22px;
+}
+.service, .SNS, .weather_2 {
+    width: 100%;
+}
+.swiper-container.se4_con {
+    height: auto;
+}
