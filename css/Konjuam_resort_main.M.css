@@ -451,11 +451,13 @@ section.sec3 {
     left: -66px;
 }
 .sec3 .tab_conlist {
+    width: 256px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 30px 0 0 20px;
+    justify-content: center;
+    margin: 30px auto;
 }
 .sec3 .tab_conlist li{
     text-align: center;
@@ -496,11 +498,11 @@ section.sec3 {
     position: relative;
 }
 .Rooms:nth-of-type(2){
-    background:url(../img/metrial/main_sec_3_rooms/derux.png) no-repeat;
+    background:url(../img/metrial/main_sec_3_rooms/noble.png) no-repeat;
     background-size: cover;
 }
 .Rooms:nth-of-type(3){
-    background:url(../img/metrial/main_sec_3_rooms/noble.png) no-repeat;
+    background:url(../img/metrial/main_sec_3_rooms/derux.png) no-repeat;
     background-size: cover;
 }
 .Rooms:nth-of-type(4){
