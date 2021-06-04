@@ -26,3 +26,13 @@ $(document).ready(function () {
         $(location).attr('href', '../html/konjiam_resrot_room_Noble.html');
     });
 });
+
+if ($(window).width() < 640) {
+    $(document).ready(function () {
+        $('.menu_M').click(function () {
+            $(this).toggleClass('on');
+            $('.nv_con').toggleClass('on');
+            $('.nav_all').toggleClass('on');
+        })
+    });
+}
