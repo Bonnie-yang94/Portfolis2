@@ -97,7 +97,7 @@ div.autobg{
     background-color: transparent;
     font-size: 1.5rem;
     color: #fff;
-    padding-left: 0px;
+    padding: 0 0 2px 10px;
     border: none;
     border-bottom: 1px solid #fff;
     margin-bottom: 20px;
