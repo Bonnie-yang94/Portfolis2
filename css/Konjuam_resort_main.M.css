@@ -107,7 +107,7 @@ div.autobg{
     background: transparent;
     width: 50px;
     top: 0;
-    left: 117px;
+    left: 108px;
     position: absolute;
     color: #fff;
     font-size: 1.2rem;
@@ -119,7 +119,7 @@ div.autobg{
     height: 1px;
     position: absolute;
     top: 21px;
-    left: 106px;
+    left: 98px;
 }
 .next_day_M span::after{
     content: "";
@@ -128,7 +128,7 @@ div.autobg{
     height: 1px;
     position: absolute;
     top: 17px;
-    left: 147px;
+    left: 139px;
     transform: rotate(45deg);
 }
 button.r_Submit {
