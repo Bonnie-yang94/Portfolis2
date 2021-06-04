@@ -265,6 +265,12 @@ header.bg {
 .rooms_con .room:nth-child(3),.room:nth-child(5){
     margin-top: 340px;
 }
+.rooms_con .room2:nth-child(6) .int{
+    display: none;
+}
+.rooms_con .room2:nth-child(6) .int.M{
+    display: block
+}
 .go_up {
     width: 30px;
     height: 30px;
