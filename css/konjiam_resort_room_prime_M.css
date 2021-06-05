@@ -196,11 +196,11 @@ section {
 .reservation::after{
     content: "";
     background: black;
-    width: 186px;
+    width: 100%;
     height: 1px;
     position: absolute;
     bottom: 0;
-    left: 70px;
+    left: 0;
 }
 .r_sec2_M{
     position: relative;
@@ -316,13 +316,7 @@ caption {
     position: relative;
 }
 .r_service::after{
-    background: black;
-    content: "";
-    width: 186px;
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    left: 70px;
+    display: none;
 }
 .wraps3{
     align-items: center;
@@ -395,14 +389,14 @@ caption {
     width: 82px;
     height: 81px;
 }
+.d_con::after{
+    display: none;
+}
 .go_up {
     width: 30px;
     height: 30px;
     top: -19%;
     right: 4%;
-}
-.sec1{
-    margin-bottom: 240px;
 }
 .f_left {
     display: flex;
