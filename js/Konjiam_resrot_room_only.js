@@ -46,6 +46,27 @@ $(".fn").datepicker({
     }
 });
 
+if ($(window).width() < 640) {
+    $(document).ready(function () {
+        $('.menu_M').click(function () {
+            $(this).toggleClass('on');
+            $('.nv_con').toggleClass('on');
+            $('.nav_all').toggleClass('on');
+        });
+    });
+
+    var d2 = new Date()
+    document.getElementById('M_st').valueAsNumber = d2;
+    document.getElementById('M_nt').valueAsNumber = d2.setDate(d2.getDate() + 1);
+    var st = $('#M_st').val();
+    var et = $('#M_nt').val();
+    var stArray = st.split('-');
+    var etArray = et.split('-');  
+    var start_date = new Date(stArray[0], stArray[1], stArray[2]);
+    var end_date = new Date(etArray[0], etArray[1], etArray[2]);
+    var days = (end_date - start_date) / 1000 / 60 / 60 / 24;
+    $('#cal_M').val(days + '박');
+}
 var d = new Date();
 var day = new String(d.getDate());
 var nextday = new String(d.getDate()+1);

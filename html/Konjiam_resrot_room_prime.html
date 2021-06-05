@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>곤지암리조트 | 객실안내 | 프라임</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" type="text/css" href="../css/jquery-ui-1.12.1/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../css/Konjiam_resrot_room_detail.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/konjiam_resort_room_prime_M.css">
 </head>
 
 <body>
+    <div class="menu_M"></div>
+    <a href="../index.html" class="top_logo_M"></a>
     <div class="nav">
         <ul class="nv_con">
             <a href="../index.html" class="top_logo"></a>
@@ -81,7 +85,21 @@
                         <input type="text" id="cal" readonly>
                     </div>
                 </div>
+                <div class="r_sec2_M">
+                    <div class="start_day_M">
+                        <span>체크인</span>
+                        <input type="date" id="M_st">
+                    </div>
+                    <div class="next_day_M">
+                        <span>체크아웃</span>
+                        <input type="date" id="M_nt">
+                    </div>
+                    <div class="cal_day_M">
+                        <input type="text" id="cal_M" readonly>
+                    </div>
+                </div>
                 <button class="r_Submit" type="submit">예약하기</button>
+            </div>
             </div>
         </div>
         <div class="wraps2">

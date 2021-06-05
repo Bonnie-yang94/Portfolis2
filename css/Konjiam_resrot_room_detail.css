@@ -179,6 +179,9 @@ section{
     flex-direction: row;
     position: relative;
 }
+.r_sec2_M{
+    display: none;
+}
 .r_sec2 input[type="text"]{
     width: 177px;
     height: 28px;

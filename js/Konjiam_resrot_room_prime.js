@@ -65,3 +65,13 @@ $("ul.noble_list li").click(function () {
     $("#" + $(this).data('id')).fadeIn(1000)
         .siblings('.tab_contents').fadeOut(300);
 });
+
+if ($(window).width() < 640) {
+    $(document).ready(function () {
+        $('.menu_M').click(function () {
+            $(this).toggleClass('on');
+            $('.nv_con').toggleClass('on');
+            $('.nav_all').toggleClass('on');
+        })
+    });
+}
