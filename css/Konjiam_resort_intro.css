@@ -23,6 +23,10 @@ header{
     align-items: center;
     padding-top: 220px;
 }
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 section.sec1{
     width: 100%;
     display: flex;

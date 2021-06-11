@@ -17,6 +17,10 @@ header.bg{
     justify-content: center;
     padding-top: 220px;
 }
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 header h1{
     font-size: 4rem;
     font-weight: 600;

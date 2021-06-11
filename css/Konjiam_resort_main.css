@@ -15,6 +15,10 @@
     width: 955px;
     margin-top: 80px;
 }
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 header{
     position: relative;
 }

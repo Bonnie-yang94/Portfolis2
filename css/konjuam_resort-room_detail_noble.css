@@ -12,6 +12,10 @@
 :root {
     --swiper-theme-color: #F48473;
 }
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 section{
     width: 100%;
     display: flex;
