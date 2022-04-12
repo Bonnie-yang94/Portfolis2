@@ -11,6 +11,9 @@
 :root {
     --swiper-theme-color: #F48473;
 }
+.swiper-container{
+    overflow: hidden;
+}
 .swiper-container.sec1_s{
     width: 955px;
     margin-top: 80px;

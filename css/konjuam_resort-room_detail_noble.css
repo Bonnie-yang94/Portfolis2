@@ -9,6 +9,9 @@
     box-sizing: border-box;
     font: 10px 'Nanum Gothic', sans-serif;
 }
+.swiper-container{
+    overflow: hidden;
+}
 :root {
     --swiper-theme-color: #F48473;
 }

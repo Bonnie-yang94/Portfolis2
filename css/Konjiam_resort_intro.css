@@ -11,6 +11,15 @@
 :root {
     --swiper-theme-color: #F48473;
 }
+.swiper-container{
+    overflow: hidden;
+}
+.swiper-button-prev:after, .swiper-button-next{
+    display: none;
+}
+.swiper-slide.album_slide{
+    cursor: pointer;
+}
 .menu_M{
     display: none;
 }
@@ -806,28 +815,28 @@ section.sec4::after{
     margin-top: 105px;
 }
 .photo{
-    background: url(../img/metrial/sub1_sec4/1_Luzi.png)no-repeat;
+    background: url(../img/metrial/sub1_sec4/1_Luzi.png) no-repeat;
     background-size: cover;
     width: 976px;
     height: 535px;
     box-shadow: 8px 9px 4px rgba(0,0,0,0.6);
 }
 .photo2{
-    background: url(../img/metrial/sub1_sec4/2_gondola.png)no-repeat;
+    background: url(../img/metrial/sub1_sec4/2_gondola.png) no-repeat;
     background-size: cover;
     width: 976px;
     height: 535px;
     box-shadow: 8px 9px 4px rgba(0,0,0,0.6);
 }
 .photo3{
-    background: url(../img/metrial/sub1_sec4/3_sauna.png)no-repeat;
+    background: url(../img/metrial/sub1_sec4/3_sauna.png) no-repeat;
     background-size: cover;
     width: 976px;
     height: 535px;
     box-shadow: 8px 9px 4px rgba(0,0,0,0.6);
 }
 .photo4{
-    background: url(../img/metrial/sub1_sec4/4_Slive.png)no-repeat;
+    background: url(../img/metrial/sub1_sec4/4_Slive.png) no-repeat;
     background-size: cover;
     width: 976px;
     height: 535px;

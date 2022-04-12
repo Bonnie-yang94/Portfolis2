@@ -10,13 +10,9 @@ var swiper = new Swiper(".r_photo", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
     },
     observer: true,
     observeParents: true

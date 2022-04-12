@@ -10,13 +10,9 @@ var swiper = new Swiper(".r_photo", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
     },
 });
 
@@ -61,7 +57,7 @@ if ($(window).width() < 640) {
     var st = $('#M_st').val();
     var et = $('#M_nt').val();
     var stArray = st.split('-');
-    var etArray = et.split('-');  
+    var etArray = et.split('-');
     var start_date = new Date(stArray[0], stArray[1], stArray[2]);
     var end_date = new Date(etArray[0], etArray[1], etArray[2]);
     var days = (end_date - start_date) / 1000 / 60 / 60 / 24;
@@ -69,12 +65,12 @@ if ($(window).width() < 640) {
 }
 var d = new Date();
 var day = new String(d.getDate());
-var nextday = new String(d.getDate()+1);
-day = day >=10 ? day:'0' + day;
-nextday = nextday >=10 ? nextday:'0' + nextday;
+var nextday = new String(d.getDate() + 1);
+day = day >= 10 ? day : '0' + day;
+nextday = nextday >= 10 ? nextday : '0' + nextday;
 var week = new Array('SUN', 'MON', 'TUE', 'WED',
     'THU', 'FRI', 'SAT', 'SUN');
-document.querySelector("#today").value= d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + day;
+document.querySelector("#today").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + day;
 
 document.querySelector("#nextday").value = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + nextday;
 
